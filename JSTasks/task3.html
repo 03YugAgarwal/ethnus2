@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Task 3 JS</title>
+    <script>
+      function mul() {
+        var first = document.querySelector("#first").value;
+        var second = document.querySelector("#second").value;
+        var result = first * second;
+        document.querySelector("#result").innerHTML = result;
+      }
+      function div() {
+        var first = document.querySelector("#first").value;
+        var second = document.querySelector("#second").value;
+        var result = first / second;
+        document.querySelector("#result").innerHTML = result;
+      }
+    </script>
+  </head>
+  <body>
+    <table>
+      <tr>
+        <td>
+          <label for="first">1st Number</label>
+        </td>
+        <td>
+          <input type="number" id="first" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="second">2nd Number</label>
+        </td>
+        <td>
+          <input type="number" id="second" />
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <button onclick="mul()">Multiply</button>
+        </td>
+        <td>
+          <button onclick="div()">Divide</button>
+        </td>
+      </tr>
+    </table>
+    <h4>Answer:</h4>
+    <p id="result"></p>
+  </body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 7 JS</title>
+    <style>
+        video {
+            display: block;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <video id="videoPlayer" src="train.mp4" loop></video>
+    <br>
+    <button id="startButton">Start</button>
+    <button id="stopButton">Stop</button>
+
+    <script>
+        const video = document.getElementById('videoPlayer');
+        const startButton = document.getElementById('startButton');
+        const stopButton = document.getElementById('stopButton');
+
+        startButton.addEventListener('click', () => {
+            video.play();
+        });
+
+        stopButton.addEventListener('click', () => {
+            video.pause();
+        });
+    </script>
+</body>
+</html>

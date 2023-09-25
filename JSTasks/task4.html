@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4 JS</title>
+    <script>
+        function date(){
+            var d = new Date();
+            var date = d.getDate();
+            var month = d.getMonth() + 1;
+            var year = d.getFullYear();
+            document.querySelector("#date").innerHTML = date + "/" + month + "/" + year;
+        }
+        function time(){
+            var d = new Date();
+            var hour = d.getHours();
+            var min = d.getMinutes();
+            var sec = d.getSeconds();
+            document.querySelector("#time").innerHTML = hour + ":" + min + ":" + sec;
+        }
+    </script>
+</head>
+<body>
+    <button onclick="date()">Show Date</button>
+    <p id="date">Date</p>
+    <button onclick="time()">Show Time</button>
+    <p id="time">time</p>
+</body>
+</html>

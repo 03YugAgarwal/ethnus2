@@ -1,0 +1,7 @@
+.bg-grey{
+    background-color: #aeaeae;
+}
+
+main,aside{
+    height: 100vh;
+}
